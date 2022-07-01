@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-char charType;
-int intType;
-long int longIntType;
-long long int longLongType;
-float floatType;
+char c;
+int i;
+long int il;
+long long int ill;
+float f;
 
-printf("Size of a char: %zu byte(s)\n", sizeof(char));
-printf("Size of an int: %zu byte(s)\n", sizeof(int));
-printf("Size of a long int: %zu byte(s)\n", sizeof(long Int));
-printf("Size of a long long int: %zu byte(s)\n", sizeof(long Long Int));
-printf("size of a float: %zu byte(s)\n", sizeof(float));
+printf("Size of a char: %d byte(s)\n", sizeof(c));
+printf("Size of an int: %d byte(s)\n", sizeof(i));
+printf("Size of a long int: %d byte(s)\n", sizeof(il));
+printf("Size of a long long int: %d byte(s)\n", sizeof(ill));
+printf("size of a float: %d byte(s)\n", sizeof(f));
 
 return (0);
 }
