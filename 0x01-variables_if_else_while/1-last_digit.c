@@ -1,28 +1,29 @@
-#include<stdlib.h>
+#include <stdlib.h>
 
-#include<time.h>
+#include <time.h>
 
-#include<stdio.h>
+#include <stdio.h>
 
 
 /**
- *main-checkifarandomnumberispositiveornegative
- *Return:0iferror
+ * main - check if a random number is positive or negative
+ *
+ * Return: 0 if error
  */
 
-intmain(void)
+int main(void)
   
-{  
-intn;
-intnLast;
+{
+int n;  
+int nLast;
 srand(time(0));
-n=rand()-RAND_MAX/2;
-nLast=n%10;
-if(nLast>5)
-printf("Lastdigitof%dis%dandisgreaterthan5\n",n,nLast);
-elseif(nLast<6&&nLast!=0)
-printf("Lastdigitof%dis%dandislessthan6andnot0\n",n,nLast);
+n = rand() - RAND_MAX / 2;
+nLast = n % 10;
+if (nLast > 5)
+printf("Last digit of %d is %d and is greater than 5\n", n, nLast);
+else if (nLast < 6 && nLast != 0)
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, nLast);
 else
-printf("Lastdigitof%dis%dandis0\n",n,nLast);
-return(0);
+printf("Last digit of %d is %d and is 0\n", n, nLast);
+return (0);
 }
