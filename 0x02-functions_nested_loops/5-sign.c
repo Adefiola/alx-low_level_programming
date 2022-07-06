@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* print_sign -> prints sign based on condition
+* print_sign: prints sign based on condition
 * @n : argument passed
-* return: 1, 0 -1 depending on condition
+* Return: return as 1, 0 -1 depending on condition
 */
 
 int print_sign(int n)
