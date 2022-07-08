@@ -3,7 +3,9 @@
 /**
 * _putchar- prints char c to stdout
 * @c: character to be printed
-* Return: Always zero
+*
+* Return: On success 1.
+* On error, -1 is returned, and error is set appropriately
 */
 
 int _putchar(char c)
